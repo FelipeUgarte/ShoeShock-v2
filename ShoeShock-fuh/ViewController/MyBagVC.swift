@@ -55,6 +55,34 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     @IBAction func next(_ sender: Any) {
+        
+        
+        //MARK: - Option 1
+//        var hostingController = UIHostingController(rootView: CongratulationsView(dismiss: {}, continueToHome: {}))
+//        hostingController.rootView.dismiss = {
+//            hostingController.dismiss(animated: true, completion: nil)
+//        }
+//        hostingController.rootView.continueToHome = {
+//            let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "VC_TO_PRESENT")
+//            hostingController.continueToHome(destination, animated: true, completion: nil)
+//        }
+//        present(hostingController, animated: true, completion: nil)
+//        self.navigationController?.pushViewController(hostingController, animated: true)
+
+        
+        //MARK: - Option 2
+//        let hostingController = UIHostingController(rootView: CongratulationsView(dismiss: {[weak self] in
+//            self?.navigationController?.popViewController(animated: true)
+//
+//        }, continueToHome: {}))
+//        self.navigationController?.pushViewController(hostingController, animated: true)
+//
+//        let hostingController2 = UIStoryboard(name: HomeVC(dismiss: {}, continueToHome: {[weak self] in
+//            self?.navigationController?.popViewController(animated: true)
+//
+//        }))
+//        self.navigationController?.pushViewController(hostingController2, animated: true)
+        
         let hostingController = UIHostingController(rootView: CongratulationsView(dismiss: {[weak self] in
             self?.navigationController?.popViewController(animated: true)
         }))

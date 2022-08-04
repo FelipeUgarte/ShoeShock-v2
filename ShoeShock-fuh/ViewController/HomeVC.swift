@@ -14,7 +14,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     @IBOutlet weak var brandCollectionView: UICollectionView!
     @IBOutlet weak var productCollectionView: UICollectionView!
     @IBOutlet weak var moreShoesCollectionView: UICollectionView!
-    @IBOutlet weak var bagBT: UIBarButtonItem!
+    @IBOutlet weak var myBagBT: UIBarButtonItem!
     
     // Buttons
     @IBOutlet weak var upcomingBT: UIButton!
@@ -39,6 +39,8 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         upcomingBT.titleLabel?.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         featured.titleLabel?.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
         new.titleLabel?.transform = CGAffineTransform(rotationAngle: -CGFloat.pi / 2)
+        
+        configureMyBagButton()
     }
 
         // MARK: - Table view data source
@@ -114,5 +116,11 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         self.present(alert, animated: true, completion: nil)
     }
 
+    private func configureMyBagButton() {
+        myBagBT.title = ""
+        myBagBT.image = UIImage(systemName: "takeoutbag.and.cup.and.straw.fill")
+        myBagBT.tintColor = UIColor(Color.gray)
+    }
+    
 }
 

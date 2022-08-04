@@ -321,10 +321,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="bagBT" destination="yyb-d1-dRf" id="708-Jm-ZKW"/>
                         <outlet property="brandCollectionView" destination="G4E-qx-TTh" id="QvF-HZ-gcr"/>
                         <outlet property="featured" destination="2uJ-t5-3FD" id="3xJ-sF-RVi"/>
                         <outlet property="moreShoesCollectionView" destination="Jts-zs-kES" id="Y7k-5k-Akh"/>
+                        <outlet property="myBagBT" destination="yyb-d1-dRf" id="708-Jm-ZKW"/>
                         <outlet property="new" destination="NHT-Wi-1kb" id="gI0-t7-NJl"/>
                         <outlet property="productCollectionView" destination="Gcu-VI-hye" id="i17-eg-wsw"/>
                         <outlet property="upcomingBT" destination="qtp-Kg-P1V" id="IlQ-hH-ifB"/>
@@ -784,7 +784,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dNG-hX-8w4"/>
+        <segue reference="YiL-XG-RIu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="shoe1-puma" width="333" height="482"/>

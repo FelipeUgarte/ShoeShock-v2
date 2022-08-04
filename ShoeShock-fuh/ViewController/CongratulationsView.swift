@@ -9,8 +9,10 @@ import SwiftUI
 
 struct CongratulationsView: View {
 
-    let dismiss: (() -> Void)
-
+    var dismiss: (() -> Void)
+    
+//    var dismiss: (() -> Void)?
+//    var continueToHome: (() -> Void)?
     
     var body: some View {
         NavigationView {
@@ -21,6 +23,13 @@ struct CongratulationsView: View {
 
                 Text("Your Purchase was successful")
                     .foregroundColor(Color(hue: 1.0, saturation: 0.009, brightness: 0.473))
+//                Button {
+//                    self.continueToHome?()
+//                } label: {
+//                    Text("Go back to home")
+//                }
+//                .padding()
+
             }
             .navigationTitle("Purchase confirmation")
         }
@@ -30,5 +39,6 @@ struct CongratulationsView: View {
 struct CongratulationsView_Previews: PreviewProvider {
     static var previews: some View {
         CongratulationsView(dismiss: {})
+//        CongratulationsView(dismiss: {}, continueToHome: {})
     }
 }
