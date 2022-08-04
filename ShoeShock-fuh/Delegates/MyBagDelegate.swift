@@ -10,5 +10,6 @@ import Foundation
 protocol UpdateBagDelegate: AnyObject {
 
     func updateTotalLabel()
+    func updateTableViews()
 
 }

@@ -67,4 +67,8 @@ extension MyBagVC: UpdateBagDelegate {
         totalNumberLB.text = String.localizedStringWithFormat("$ %.2f", myBag.totalCost)
         print("MyBagVC")
     }
+    
+    func updateTableViews() {
+        bagItemsTableView.reloadData()
+    }
 }

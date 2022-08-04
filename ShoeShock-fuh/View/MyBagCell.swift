@@ -43,31 +43,15 @@ class MyBagCell: UITableViewCell {
         quantityLabel.text = String(quantity)
         DataService.instance.changeQuantity(newQuantity: quantity, productId: self.id)
         delegate?.updateTotalLabel()
-        updateTotalLB()
     }
 
     @IBAction func decreaseBT(_ sender: Any) {
-        print("MyBagCell - decreaseBT")
-        if quantity >= 2 {
             self.quantity -= 1
             print("Change quantity to cell: \(self.quantity)")
             quantityLabel.text = String(quantity)
             DataService.instance.changeQuantity(newQuantity: quantity, productId: self.id)
             delegate?.updateTotalLabel()
-        } else {
-            self.quantity -= 1
-            print("Cell deleted - quantity to cell: \(self.quantity)")
-            quantityLabel.text = String(quantity)
-            DataService.instance.changeQuantity(newQuantity: quantity, productId: self.id)
-            delegate?.updateTotalLabel()
-        }
-        updateTotalLB()
-    }
+        delegate?.updateTableViews()
 
-    func updateTotalLB() {
-        print("MyBagCell - updateTotalLB")
-        viewController?.getBag()
-        viewController?.bagItemsTableView.reloadData()
-        viewController?.updateTotalLabel()
     }
 }

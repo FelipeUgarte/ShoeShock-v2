@@ -740,7 +740,9 @@
                             <constraint firstItem="fOC-NJ-d6D" firstAttribute="trailing" secondItem="qO0-sA-430" secondAttribute="trailing" id="uVv-W3-f5O"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Bag" largeTitleDisplayMode="always" id="ncm-Uj-X9X"/>
+                    <navigationItem key="navigationItem" title="My Bag" largeTitleDisplayMode="always" id="ncm-Uj-X9X">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="IlL-n3-LqH"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="bagItemsTableView" destination="fOC-NJ-d6D" id="1Qb-cW-6L5"/>
                         <outlet property="nextBT" destination="rmY-ER-6Vm" id="QGz-78-WdS"/>
