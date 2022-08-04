@@ -313,8 +313,15 @@
                             <constraint firstItem="Jts-zs-kES" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zff-PQ-EwL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Discover" id="mj2-gs-2Ge"/>
+                    <navigationItem key="navigationItem" title="Discover" id="mj2-gs-2Ge">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="yyb-d1-dRf">
+                            <connections>
+                                <segue destination="Lvj-wW-bCm" kind="show" id="YiL-XG-RIu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="bagBT" destination="yyb-d1-dRf" id="708-Jm-ZKW"/>
                         <outlet property="brandCollectionView" destination="G4E-qx-TTh" id="QvF-HZ-gcr"/>
                         <outlet property="featured" destination="2uJ-t5-3FD" id="3xJ-sF-RVi"/>
                         <outlet property="moreShoesCollectionView" destination="Jts-zs-kES" id="Y7k-5k-Akh"/>
@@ -567,7 +574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyF-Fr-yjk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928.985507246377" y="134.59821428571428"/>
+            <point key="canvasLocation" x="2096" y="-329"/>
         </scene>
         <!--My Bag-->
         <scene sceneID="o6u-tF-heJ">
@@ -741,10 +748,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Bag" largeTitleDisplayMode="always" id="ncm-Uj-X9X">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="IlL-n3-LqH"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="IlL-n3-LqH">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="bagItemsTableView" destination="fOC-NJ-d6D" id="1Qb-cW-6L5"/>
+                        <outlet property="itemCountBT" destination="IlL-n3-LqH" id="6rB-Hs-wj7"/>
                         <outlet property="nextBT" destination="rmY-ER-6Vm" id="QGz-78-WdS"/>
                         <outlet property="totalNumberLB" destination="pdF-8H-AxV" id="VXx-oN-cue"/>
                         <outlet property="totalTextLB" destination="LoC-g3-0AV" id="AGk-rj-4ga"/>
@@ -752,7 +762,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qyu-c3-Oz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2850.7246376811595" y="134.5108695652174"/>
+            <point key="canvasLocation" x="3064" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Jc-ut-nng">
@@ -773,6 +783,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dNG-hX-8w4"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="shoe1-puma" width="333" height="482"/>
         <namedColor name="HeroBannerGreen">

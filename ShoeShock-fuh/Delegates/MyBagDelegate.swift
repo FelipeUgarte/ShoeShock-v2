@@ -11,5 +11,5 @@ protocol UpdateBagDelegate: AnyObject {
 
     func updateTotalLabel()
     func updateTableViews()
-
+    func updateItemCountBT()
 }

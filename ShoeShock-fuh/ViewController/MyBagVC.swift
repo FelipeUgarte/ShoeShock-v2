@@ -11,7 +11,7 @@ import SwiftUI
 class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var bagItemsTableView: UITableView!
-    @IBOutlet weak var itemCountLB: UILabel!
+    @IBOutlet weak var itemCountBT: UIBarButtonItem!
     @IBOutlet weak var totalTextLB: UILabel!
     @IBOutlet weak var totalNumberLB: UILabel!
     @IBOutlet weak var nextBT: UIButton!
@@ -26,6 +26,7 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         navigationItem.title = "My Bag"
         getBag()
         updateTotalLabel()
+        updateItemCountBT()
     }
 
     // MARK: - Methods
@@ -70,5 +71,14 @@ extension MyBagVC: UpdateBagDelegate {
     
     func updateTableViews() {
         bagItemsTableView.reloadData()
+    }
+    
+    func updateItemCountBT() {
+        var items = 0
+        for item in myBag.bagProducts {
+            items += item.quantity
+        }
+        self.itemCountBT.title = items > 1 ? "Total: \(items) items" : "Total: \(items) item"
+        itemCountBT.tintColor = UIColor(Color.gray)
     }
 }

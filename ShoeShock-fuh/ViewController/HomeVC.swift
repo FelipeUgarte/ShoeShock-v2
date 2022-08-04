@@ -14,6 +14,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     @IBOutlet weak var brandCollectionView: UICollectionView!
     @IBOutlet weak var productCollectionView: UICollectionView!
     @IBOutlet weak var moreShoesCollectionView: UICollectionView!
+    @IBOutlet weak var bagBT: UIBarButtonItem!
     
     // Buttons
     @IBOutlet weak var upcomingBT: UIButton!
@@ -94,15 +95,9 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         if let destination = segue.destination as? ShoeDetailVC {
             assert(sender as? ShoeModel != nil)
             destination.initShoes(shoe: sender as! ShoeModel)
-//            destination.initShoes(shoe: sender as! ShoeModel, myBag: self.myBag)
         }
     }
 
-//    func likeToggle(shoeId: UUID) {
-//        DataService.instance.likeShoeToggle(shoeId: shoeId)
-//        addProduct(shoeId: shoeId)
-//        showAlert()
-//    }
 
     private func addProduct(shoeId: UUID) {
         DataService.instance.addProductToBag(shoeId: shoeId)
