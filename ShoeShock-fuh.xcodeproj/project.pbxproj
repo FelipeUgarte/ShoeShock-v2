@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C1D4FB92867DDC700A082B4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D4FB82867DDC600A082B4 /* Constants.swift */; };
+		0C1D4FBB2868A69400A082B4 /* SmallImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D4FBA2868A69400A082B4 /* SmallImagesCell.swift */; };
+		0C55C59C2852B5F2000E1752 /* ShoeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55C59B2852B5F2000E1752 /* ShoeDetailVC.swift */; };
+		0C83006F284566C500D37949 /* BrandsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83006E284566C500D37949 /* BrandsModel.swift */; };
+		0C8300712846518B00D37949 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8300702846518B00D37949 /* BrandCell.swift */; };
+		0C83007328466B2100D37949 /* MoreShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83007228466B2100D37949 /* MoreShoeCell.swift */; };
+		0CA995C92847CC9100F828C6 /* SizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA995C82847CC9100F828C6 /* SizeCell.swift */; };
+		0CA995CB2847CD6700F828C6 /* SizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA995CA2847CD6700F828C6 /* SizeModel.swift */; };
+		0CBA8D5F28413C1D006450ED /* HeroBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D5E28413C1D006450ED /* HeroBannerCell.swift */; };
+		0CBA8D6128414228006450ED /* ShoeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D6028414228006450ED /* ShoeModel.swift */; };
+		0CBA8D63284142F3006450ED /* SelectedProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D62284142F3006450ED /* SelectedProductModel.swift */; };
+		0CBA8D6528414412006450ED /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D6428414412006450ED /* ShoppingCart.swift */; };
+		0CBA8D682841634D006450ED /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D672841634D006450ED /* DataService.swift */; };
+		0CCA89C528402EB800657C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA89C428402EB800657C00 /* AppDelegate.swift */; };
+		0CCA89C728402EB800657C00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA89C628402EB800657C00 /* SceneDelegate.swift */; };
+		0CCA89C928402EB800657C00 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA89C828402EB800657C00 /* HomeVC.swift */; };
+		0CCA89CC28402EB800657C00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA89CA28402EB800657C00 /* Main.storyboard */; };
+		0CCA89CE28402EBA00657C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA89CD28402EBA00657C00 /* Assets.xcassets */; };
+		0CCA89D128402EBA00657C00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCA89CF28402EBA00657C00 /* LaunchScreen.storyboard */; };
+		0CD625CA286E595000084EB9 /* MyBagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD625C9286E595000084EB9 /* MyBagModel.swift */; };
+		0CD625CE286E5D4200084EB9 /* MyBagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD625CD286E5D4200084EB9 /* MyBagVC.swift */; };
+		0CD625D02870EDE000084EB9 /* MyBagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD625CF2870EDE000084EB9 /* MyBagCell.swift */; };
+		0CDD4A9528837FA100AC2290 /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDD4A9428837FA100AC2290 /* CongratulationsView.swift */; };
+		0CFF6B09288E2A5B003B4B30 /* MyBagDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFF6B08288E2A5B003B4B30 /* MyBagDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C1D4FB82867DDC600A082B4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0C1D4FBA2868A69400A082B4 /* SmallImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImagesCell.swift; sourceTree = "<group>"; };
+		0C55C59B2852B5F2000E1752 /* ShoeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDetailVC.swift; sourceTree = "<group>"; };
+		0C83006E284566C500D37949 /* BrandsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsModel.swift; sourceTree = "<group>"; };
+		0C8300702846518B00D37949 /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
+		0C83007228466B2100D37949 /* MoreShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreShoeCell.swift; sourceTree = "<group>"; };
+		0CA995C82847CC9100F828C6 /* SizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCell.swift; sourceTree = "<group>"; };
+		0CA995CA2847CD6700F828C6 /* SizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeModel.swift; sourceTree = "<group>"; };
+		0CBA8D5E28413C1D006450ED /* HeroBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBannerCell.swift; sourceTree = "<group>"; };
+		0CBA8D6028414228006450ED /* ShoeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeModel.swift; sourceTree = "<group>"; };
+		0CBA8D62284142F3006450ED /* SelectedProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedProductModel.swift; sourceTree = "<group>"; };
+		0CBA8D6428414412006450ED /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		0CBA8D672841634D006450ED /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		0CCA89C128402EB800657C00 /* ShoeShock-fuh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShoeShock-fuh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CCA89C428402EB800657C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CCA89C628402EB800657C00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0CCA89C828402EB800657C00 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0CCA89CB28402EB800657C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CCA89CD28402EBA00657C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CCA89D028402EBA00657C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CCA89D228402EBA00657C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD625C9286E595000084EB9 /* MyBagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagModel.swift; sourceTree = "<group>"; };
+		0CD625CD286E5D4200084EB9 /* MyBagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagVC.swift; sourceTree = "<group>"; };
+		0CD625CF2870EDE000084EB9 /* MyBagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagCell.swift; sourceTree = "<group>"; };
+		0CDD4A9428837FA100AC2290 /* CongratulationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
+		0CFF6B08288E2A5B003B4B30 /* MyBagDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBagDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CCA89BE28402EB800657C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C16D92E2875384700AAC625 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA89C828402EB800657C00 /* HomeVC.swift */,
+				0C55C59B2852B5F2000E1752 /* ShoeDetailVC.swift */,
+				0CD625CD286E5D4200084EB9 /* MyBagVC.swift */,
+				0CDD4A9428837FA100AC2290 /* CongratulationsView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		0C1D4FB72867DDAF00A082B4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C1D4FB82867DDC600A082B4 /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0CBA8D6628416336006450ED /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				0CBA8D672841634D006450ED /* DataService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		0CCA89B828402EB800657C00 = {
+			isa = PBXGroup;
+			children = (
+				0CCA89C328402EB800657C00 /* ShoeShock-fuh */,
+				0CCA89C228402EB800657C00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0CCA89C228402EB800657C00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA89C128402EB800657C00 /* ShoeShock-fuh.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CCA89C328402EB800657C00 /* ShoeShock-fuh */ = {
+			isa = PBXGroup;
+			children = (
+				0CCA89C428402EB800657C00 /* AppDelegate.swift */,
+				0CCA89C628402EB800657C00 /* SceneDelegate.swift */,
+				0CCA89CA28402EB800657C00 /* Main.storyboard */,
+				0CCA89DA28402F5E00657C00 /* View */,
+				0C16D92E2875384700AAC625 /* ViewController */,
+				0CCA89D828402F4500657C00 /* Model */,
+				0CBA8D6628416336006450ED /* DataService */,
+				0CFF6B07288E2A41003B4B30 /* Delegates */,
+				0C1D4FB72867DDAF00A082B4 /* Resources */,
+				0CCA89CD28402EBA00657C00 /* Assets.xcassets */,
+				0CCA89CF28402EBA00657C00 /* LaunchScreen.storyboard */,
+				0CCA89D228402EBA00657C00 /* Info.plist */,
+			);
+			path = "ShoeShock-fuh";
+			sourceTree = "<group>";
+		};
+		0CCA89D828402F4500657C00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CBA8D6028414228006450ED /* ShoeModel.swift */,
+				0CBA8D62284142F3006450ED /* SelectedProductModel.swift */,
+				0CBA8D6428414412006450ED /* ShoppingCart.swift */,
+				0C83006E284566C500D37949 /* BrandsModel.swift */,
+				0CA995CA2847CD6700F828C6 /* SizeModel.swift */,
+				0CD625C9286E595000084EB9 /* MyBagModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CCA89DA28402F5E00657C00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CBA8D5E28413C1D006450ED /* HeroBannerCell.swift */,
+				0C8300702846518B00D37949 /* BrandCell.swift */,
+				0C83007228466B2100D37949 /* MoreShoeCell.swift */,
+				0CA995C82847CC9100F828C6 /* SizeCell.swift */,
+				0C1D4FBA2868A69400A082B4 /* SmallImagesCell.swift */,
+				0CD625CF2870EDE000084EB9 /* MyBagCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CFF6B07288E2A41003B4B30 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0CFF6B08288E2A5B003B4B30 /* MyBagDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CCA89C028402EB800657C00 /* ShoeShock-fuh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CCA89D528402EBA00657C00 /* Build configuration list for PBXNativeTarget "ShoeShock-fuh" */;
+			buildPhases = (
+				0CCA89BD28402EB800657C00 /* Sources */,
+				0CCA89BE28402EB800657C00 /* Frameworks */,
+				0CCA89BF28402EB800657C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ShoeShock-fuh";
+			productName = "ShoeShock-fuh";
+			productReference = 0CCA89C128402EB800657C00 /* ShoeShock-fuh.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CCA89B928402EB800657C00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					0CCA89C028402EB800657C00 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 0CCA89BC28402EB800657C00 /* Build configuration list for PBXProject "ShoeShock-fuh" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CCA89B828402EB800657C00;
+			productRefGroup = 0CCA89C228402EB800657C00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CCA89C028402EB800657C00 /* ShoeShock-fuh */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CCA89BF28402EB800657C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CCA89D128402EBA00657C00 /* LaunchScreen.storyboard in Resources */,
+				0CCA89CE28402EBA00657C00 /* Assets.xcassets in Resources */,
+				0CCA89CC28402EB800657C00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CCA89BD28402EB800657C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDD4A9528837FA100AC2290 /* CongratulationsView.swift in Sources */,
+				0CCA89C928402EB800657C00 /* HomeVC.swift in Sources */,
+				0C83006F284566C500D37949 /* BrandsModel.swift in Sources */,
+				0CA995CB2847CD6700F828C6 /* SizeModel.swift in Sources */,
+				0CD625CE286E5D4200084EB9 /* MyBagVC.swift in Sources */,
+				0CBA8D63284142F3006450ED /* SelectedProductModel.swift in Sources */,
+				0CFF6B09288E2A5B003B4B30 /* MyBagDelegate.swift in Sources */,
+				0CCA89C528402EB800657C00 /* AppDelegate.swift in Sources */,
+				0C1D4FB92867DDC700A082B4 /* Constants.swift in Sources */,
+				0CBA8D6128414228006450ED /* ShoeModel.swift in Sources */,
+				0C8300712846518B00D37949 /* BrandCell.swift in Sources */,
+				0CCA89C728402EB800657C00 /* SceneDelegate.swift in Sources */,
+				0CBA8D5F28413C1D006450ED /* HeroBannerCell.swift in Sources */,
+				0CD625CA286E595000084EB9 /* MyBagModel.swift in Sources */,
+				0CBA8D6528414412006450ED /* ShoppingCart.swift in Sources */,
+				0C55C59C2852B5F2000E1752 /* ShoeDetailVC.swift in Sources */,
+				0CA995C92847CC9100F828C6 /* SizeCell.swift in Sources */,
+				0CBA8D682841634D006450ED /* DataService.swift in Sources */,
+				0C83007328466B2100D37949 /* MoreShoeCell.swift in Sources */,
+				0CD625D02870EDE000084EB9 /* MyBagCell.swift in Sources */,
+				0C1D4FBB2868A69400A082B4 /* SmallImagesCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CCA89CA28402EB800657C00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CCA89CB28402EB800657C00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CCA89CF28402EBA00657C00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CCA89D028402EBA00657C00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CCA89D328402EBA00657C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CCA89D428402EBA00657C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CCA89D628402EBA00657C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HBVVE943H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ShoeShock-fuh/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FelipeUgarte.ShoeShock-fuh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CCA89D728402EBA00657C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4HBVVE943H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ShoeShock-fuh/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "FelipeUgarte.ShoeShock-fuh";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CCA89BC28402EB800657C00 /* Build configuration list for PBXProject "ShoeShock-fuh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCA89D328402EBA00657C00 /* Debug */,
+				0CCA89D428402EBA00657C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CCA89D528402EBA00657C00 /* Build configuration list for PBXNativeTarget "ShoeShock-fuh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCA89D628402EBA00657C00 /* Debug */,
+				0CCA89D728402EBA00657C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CCA89B928402EB800657C00 /* Project object */;
+}
