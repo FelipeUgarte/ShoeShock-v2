@@ -15,6 +15,7 @@
 		0C83007328466B2100D37949 /* MoreShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83007228466B2100D37949 /* MoreShoeCell.swift */; };
 		0CA995C92847CC9100F828C6 /* SizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA995C82847CC9100F828C6 /* SizeCell.swift */; };
 		0CA995CB2847CD6700F828C6 /* SizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA995CA2847CD6700F828C6 /* SizeModel.swift */; };
+		0CB220FA289C8487009009F6 /* Brands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB220F9289C8487009009F6 /* Brands.swift */; };
 		0CBA8D5F28413C1D006450ED /* HeroBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D5E28413C1D006450ED /* HeroBannerCell.swift */; };
 		0CBA8D6128414228006450ED /* ShoeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D6028414228006450ED /* ShoeModel.swift */; };
 		0CBA8D63284142F3006450ED /* SelectedProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D62284142F3006450ED /* SelectedProductModel.swift */; };
@@ -42,6 +43,7 @@
 		0C83007228466B2100D37949 /* MoreShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreShoeCell.swift; sourceTree = "<group>"; };
 		0CA995C82847CC9100F828C6 /* SizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCell.swift; sourceTree = "<group>"; };
 		0CA995CA2847CD6700F828C6 /* SizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeModel.swift; sourceTree = "<group>"; };
+		0CB220F9289C8487009009F6 /* Brands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brands.swift; sourceTree = "<group>"; };
 		0CBA8D5E28413C1D006450ED /* HeroBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBannerCell.swift; sourceTree = "<group>"; };
 		0CBA8D6028414228006450ED /* ShoeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeModel.swift; sourceTree = "<group>"; };
 		0CBA8D62284142F3006450ED /* SelectedProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedProductModel.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBA8D672841634D006450ED /* DataService.swift */,
+				0CB220F9289C8487009009F6 /* Brands.swift */,
 			);
 			path = DataService;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				0CBA8D5F28413C1D006450ED /* HeroBannerCell.swift in Sources */,
 				0CD625CA286E595000084EB9 /* MyBagModel.swift in Sources */,
 				0CBA8D6528414412006450ED /* ShoppingCart.swift in Sources */,
+				0CB220FA289C8487009009F6 /* Brands.swift in Sources */,
 				0C55C59C2852B5F2000E1752 /* ShoeDetailVC.swift in Sources */,
 				0CA995C92847CC9100F828C6 /* SizeCell.swift in Sources */,
 				0CBA8D682841634D006450ED /* DataService.swift in Sources */,

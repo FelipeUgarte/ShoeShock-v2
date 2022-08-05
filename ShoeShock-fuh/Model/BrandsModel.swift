@@ -7,11 +7,19 @@
 
 import Foundation
 
-struct BrandModel {
-    private(set) public var id = UUID()
-    private(set) public var name: String
-    
-    init(name: String) {
-        self.name = name
-    }
-}
+//struct BrandModel {
+//    private(set) public var id = UUID()
+//    private(set) public var name: String
+//    
+//    init(name: String) {
+//        self.name = name
+//    }
+//}
+//
+//struct NewBrandModel {
+//    private(set) public var title: brandsEnum
+//    
+//    init(title: brandsEnum) {
+//        self.title = title
+//    }
+//}

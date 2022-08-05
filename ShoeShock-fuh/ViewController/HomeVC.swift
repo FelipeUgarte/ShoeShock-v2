@@ -8,6 +8,9 @@
 import UIKit
 import SwiftUI
 
+//enum ColelctionViewsEnum: UICollectionView {
+//    case brandCollectionView, productCollectionView, moreShoesCollectionView
+//}
 class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     // CollectionsViews
@@ -47,48 +50,60 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        // Iterate for each collectionView
-        if collectionView == productCollectionView {
+        switch collectionView {
+        case productCollectionView:
             return DataService.instance.getShoes().count
-        } else if collectionView == moreShoesCollectionView {
+        case moreShoesCollectionView:
             return DataService.instance.getMoreShoes().count
-        } else {
-            return DataService.instance.getBrands().count
+        case brandCollectionView:
+            return BrandsEnum.allCases.count
+        default:
+            return 0
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        // Iterate for each collectionView
-        if collectionView == productCollectionView {
+        switch collectionView {
+        case productCollectionView:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShoeCell", for: indexPath) as? HeroBannerCell {
                 let shoe = DataService.instance.getShoes()[indexPath.row]
                 cell.updateCell(shoes: shoe)
                 return cell
             }
             return HeroBannerCell()
-        } else if collectionView == moreShoesCollectionView {
+        case moreShoesCollectionView:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoreShoeCell", for: indexPath) as? MoreShoeCell {
-                let shoe = DataService.instance.getMoreShoes()[indexPath.row]
+                let shoe = DataService.instance.getShoes()[indexPath.row]
                 cell.getMoreShoes(shoe: shoe)
                 return cell
             }
-            return MoreShoeCell()
-        } else {
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BrandCell", for: indexPath) as? BrandCell {
-                let brand = DataService.instance.getBrands()[indexPath.row]
-                cell.updateBrandCell(brand: brand)
+            return HeroBannerCell()
+        case brandCollectionView:
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BrandCell", for: indexPath) as? BrandCell, let brand = BrandsEnum(rawValue: indexPath.row) { // NATE: this was with your help at the weekly meetup
+                cell.updateBrandCell(brand: brand.title)
                 return cell
             }
+            return BrandCell()
+        default:
             return BrandCell()
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if collectionView == productCollectionView {
+        
+        
+        switch collectionView {
+        case productCollectionView:
             let cell = DataService.instance.getShoes()[indexPath.row]
             print("** Selected Shoe")
             performSegue(withIdentifier: "ShoeDetailSegue", sender: cell)
+        case brandCollectionView:
+            if let brand = BrandsEnum(rawValue: indexPath.row) {
+                print("Selected Brands is \(brand)")
+            }
+        default:
+            return
         }
     }
     

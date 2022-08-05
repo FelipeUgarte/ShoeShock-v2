@@ -12,7 +12,7 @@ class DataService {
     static let instance = DataService()
 
 
-    // MARK: - Shoes Properties
+    // MARK: - Shoes
     private var shoes = [
         ShoeModel(name: "Shoe1",
                   brand: "Nike",
@@ -72,14 +72,13 @@ class DataService {
                  )
     ]
     
-    private var brands = [
-        BrandModel(name: "Nike"),
-        BrandModel(name: "Addidas"),
-        BrandModel(name: "Jordan"),
-        BrandModel(name: "Puma"),
-        BrandModel(name: "Power")
-    ]
+    func getShoes() -> [ShoeModel] {
+        return shoes
+    }
+
     
+    // MARK: - Shoes
+
     private var shoesListDetail = [
         ShoeModel(name: "Shoe1",
                   brand: "Nike",
@@ -139,6 +138,13 @@ class DataService {
                  )
     ]
     
+    func getMoreShoes() -> [ShoeModel] {
+        return shoesListDetail
+    }
+    
+    
+    // MARK: - Size
+    
     private let size: [SizeModel] = [
         SizeModel(sizeNumber: "7"),
         SizeModel(sizeNumber: "7.5"),
@@ -148,20 +154,6 @@ class DataService {
         SizeModel(sizeNumber: "9.5"),
         SizeModel(sizeNumber: "10")
     ]
-
-
-    // MARK: - Shoes Methods
-    func getShoes() -> [ShoeModel] {
-        return shoes
-    }
-    
-    func getBrands() -> [BrandModel] {
-        return brands
-    }
-    
-    func getMoreShoes() -> [ShoeModel] {
-        return shoesListDetail
-    }
     
     func getSizes() -> [SizeModel] {
         return size
@@ -216,6 +208,7 @@ class DataService {
 
     }
 
+    
     // MARK: - Private Methods
 
     private func getShoeIndex(_ id: UUID) -> Int {
