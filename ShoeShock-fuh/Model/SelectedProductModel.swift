@@ -9,9 +9,9 @@ import Foundation
 
 class SelectedProductModel {
     
-    var item: ShoeModel
-    var cuantity: Int
-    var subtotal: Double
+    private(set) public var item: ShoeModel
+    private(set) public var cuantity: Int
+    private(set) public var subtotal: Double
     
     init(item: ShoeModel, cuantity: Int, subtotal: Double) {
         self.item = item

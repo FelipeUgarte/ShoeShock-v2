@@ -10,7 +10,6 @@
 		0C1D4FB92867DDC700A082B4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D4FB82867DDC600A082B4 /* Constants.swift */; };
 		0C1D4FBB2868A69400A082B4 /* SmallImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1D4FBA2868A69400A082B4 /* SmallImagesCell.swift */; };
 		0C55C59C2852B5F2000E1752 /* ShoeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C55C59B2852B5F2000E1752 /* ShoeDetailVC.swift */; };
-		0C83006F284566C500D37949 /* BrandsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83006E284566C500D37949 /* BrandsModel.swift */; };
 		0C8300712846518B00D37949 /* BrandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8300702846518B00D37949 /* BrandCell.swift */; };
 		0C83007328466B2100D37949 /* MoreShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83007228466B2100D37949 /* MoreShoeCell.swift */; };
 		0CA995C92847CC9100F828C6 /* SizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA995C82847CC9100F828C6 /* SizeCell.swift */; };
@@ -19,7 +18,6 @@
 		0CBA8D5F28413C1D006450ED /* HeroBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D5E28413C1D006450ED /* HeroBannerCell.swift */; };
 		0CBA8D6128414228006450ED /* ShoeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D6028414228006450ED /* ShoeModel.swift */; };
 		0CBA8D63284142F3006450ED /* SelectedProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D62284142F3006450ED /* SelectedProductModel.swift */; };
-		0CBA8D6528414412006450ED /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D6428414412006450ED /* ShoppingCart.swift */; };
 		0CBA8D682841634D006450ED /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA8D672841634D006450ED /* DataService.swift */; };
 		0CCA89C528402EB800657C00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA89C428402EB800657C00 /* AppDelegate.swift */; };
 		0CCA89C728402EB800657C00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA89C628402EB800657C00 /* SceneDelegate.swift */; };
@@ -38,7 +36,6 @@
 		0C1D4FB82867DDC600A082B4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0C1D4FBA2868A69400A082B4 /* SmallImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImagesCell.swift; sourceTree = "<group>"; };
 		0C55C59B2852B5F2000E1752 /* ShoeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDetailVC.swift; sourceTree = "<group>"; };
-		0C83006E284566C500D37949 /* BrandsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsModel.swift; sourceTree = "<group>"; };
 		0C8300702846518B00D37949 /* BrandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCell.swift; sourceTree = "<group>"; };
 		0C83007228466B2100D37949 /* MoreShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreShoeCell.swift; sourceTree = "<group>"; };
 		0CA995C82847CC9100F828C6 /* SizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCell.swift; sourceTree = "<group>"; };
@@ -47,7 +44,6 @@
 		0CBA8D5E28413C1D006450ED /* HeroBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBannerCell.swift; sourceTree = "<group>"; };
 		0CBA8D6028414228006450ED /* ShoeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeModel.swift; sourceTree = "<group>"; };
 		0CBA8D62284142F3006450ED /* SelectedProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedProductModel.swift; sourceTree = "<group>"; };
-		0CBA8D6428414412006450ED /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		0CBA8D672841634D006450ED /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0CCA89C128402EB800657C00 /* ShoeShock-fuh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShoeShock-fuh.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCA89C428402EB800657C00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,8 +139,6 @@
 			children = (
 				0CBA8D6028414228006450ED /* ShoeModel.swift */,
 				0CBA8D62284142F3006450ED /* SelectedProductModel.swift */,
-				0CBA8D6428414412006450ED /* ShoppingCart.swift */,
-				0C83006E284566C500D37949 /* BrandsModel.swift */,
 				0CA995CA2847CD6700F828C6 /* SizeModel.swift */,
 				0CD625C9286E595000084EB9 /* MyBagModel.swift */,
 			);
@@ -245,7 +239,6 @@
 			files = (
 				0CDD4A9528837FA100AC2290 /* CongratulationsView.swift in Sources */,
 				0CCA89C928402EB800657C00 /* HomeVC.swift in Sources */,
-				0C83006F284566C500D37949 /* BrandsModel.swift in Sources */,
 				0CA995CB2847CD6700F828C6 /* SizeModel.swift in Sources */,
 				0CD625CE286E5D4200084EB9 /* MyBagVC.swift in Sources */,
 				0CBA8D63284142F3006450ED /* SelectedProductModel.swift in Sources */,
@@ -257,7 +250,6 @@
 				0CCA89C728402EB800657C00 /* SceneDelegate.swift in Sources */,
 				0CBA8D5F28413C1D006450ED /* HeroBannerCell.swift in Sources */,
 				0CD625CA286E595000084EB9 /* MyBagModel.swift in Sources */,
-				0CBA8D6528414412006450ED /* ShoppingCart.swift in Sources */,
 				0CB220FA289C8487009009F6 /* Brands.swift in Sources */,
 				0C55C59C2852B5F2000E1752 /* ShoeDetailVC.swift in Sources */,
 				0CA995C92847CC9100F828C6 /* SizeCell.swift in Sources */,

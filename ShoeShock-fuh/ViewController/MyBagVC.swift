@@ -17,7 +17,7 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var nextBT: UIButton!
 
     var myBag = MyBagModel(product: [])
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bagItemsTableView.dataSource = self
@@ -71,22 +71,19 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         
         //MARK: - Option 2
-//        let hostingController = UIHostingController(rootView: CongratulationsView(dismiss: {[weak self] in
-//            self?.navigationController?.popViewController(animated: true)
-//
-//        }, continueToHome: {}))
-//        self.navigationController?.pushViewController(hostingController, animated: true)
-//
-//        let hostingController2 = UIStoryboard(name: HomeVC(dismiss: {}, continueToHome: {[weak self] in
-//            self?.navigationController?.popViewController(animated: true)
-//
-//        }))
-//        self.navigationController?.pushViewController(hostingController2, animated: true)
+        let hostingController = UIHostingController(rootView: CongratulationsView())
         
-        let hostingController = UIHostingController(rootView: CongratulationsView(dismiss: {[weak self] in
-            self?.navigationController?.popViewController(animated: true)
-        }))
-        self.navigationController?.pushViewController(hostingController, animated: true)
+        hostingController.rootView.dismiss = {
+            hostingController.dismiss(animated: true, completion: nil)
+        }
+        hostingController.rootView.present = {
+            let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "HomeVC")
+            hostingController.modalPresentationStyle = .fullScreen
+            hostingController.modalTransitionStyle = .crossDissolve
+            hostingController.present(destination, animated: true, completion: nil)
+        }
+        
+        present(hostingController, animated: true, completion: nil)
     }
 
 }
