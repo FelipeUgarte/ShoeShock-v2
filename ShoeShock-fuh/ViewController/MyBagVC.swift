@@ -17,7 +17,7 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var nextBT: UIButton!
 
     var myBag = MyBagModel(product: [])
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         bagItemsTableView.dataSource = self
@@ -55,24 +55,8 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     @IBAction func next(_ sender: Any) {
-        
-        
-        //MARK: - Option 1
-//        var hostingController = UIHostingController(rootView: CongratulationsView(dismiss: {}, continueToHome: {}))
-//        hostingController.rootView.dismiss = {
-//            hostingController.dismiss(animated: true, completion: nil)
-//        }
-//        hostingController.rootView.continueToHome = {
-//            let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "VC_TO_PRESENT")
-//            hostingController.continueToHome(destination, animated: true, completion: nil)
-//        }
-//        present(hostingController, animated: true, completion: nil)
-//        self.navigationController?.pushViewController(hostingController, animated: true)
-
-        
-        //MARK: - Option 2
         let hostingController = UIHostingController(rootView: CongratulationsView())
-        
+
         hostingController.rootView.dismiss = {
             hostingController.dismiss(animated: true, completion: nil)
         }
@@ -82,7 +66,7 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             hostingController.modalTransitionStyle = .crossDissolve
             hostingController.present(destination, animated: true, completion: nil)
         }
-        
+
         present(hostingController, animated: true, completion: nil)
     }
 
@@ -93,11 +77,11 @@ extension MyBagVC: UpdateBagDelegate {
         totalNumberLB.text = String.localizedStringWithFormat("$ %.2f", myBag.totalCost)
         print("MyBagVC")
     }
-    
+
     func updateTableViews() {
         bagItemsTableView.reloadData()
     }
-    
+
     func updateItemCountBT() {
         var items = 0
         for item in myBag.bagProducts {
@@ -107,3 +91,4 @@ extension MyBagVC: UpdateBagDelegate {
         itemCountBT.tintColor = UIColor(Color.gray)
     }
 }
+
