@@ -27,6 +27,7 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         getBag()
         updateTotalLabel()
         updateItemCountBT()
+        // print(navigationController) // this is a test about navigation controller debuging
     }
 
     // MARK: - Methods
@@ -55,19 +56,17 @@ class MyBagVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
 
     @IBAction func next(_ sender: Any) {
-        let hostingController = UIHostingController(rootView: CongratulationsView())
 
-        hostingController.rootView.dismiss = {
-            hostingController.dismiss(animated: true, completion: nil)
-        }
+        let settingsView = CongratulationsView()
+        let hostingController = UIHostingController(rootView: settingsView)
+        self.navigationController?.pushViewController(hostingController, animated: true)
+
         hostingController.rootView.present = {
-            let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "HomeVC")
+            let destination = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "HomeVCID")
             hostingController.modalPresentationStyle = .fullScreen
             hostingController.modalTransitionStyle = .crossDissolve
             hostingController.present(destination, animated: true, completion: nil)
         }
-
-        present(hostingController, animated: true, completion: nil)
     }
 
 }

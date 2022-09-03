@@ -9,10 +9,8 @@ import SwiftUI
 
 struct CongratulationsView: View {
 
-    var dismiss:        (() -> Void)?
+    var dismiss: (() -> Void)?
     var present: (() -> Void)?
-
-//    var dismiss: (() -> Void)?
 
     var body: some View {
         NavigationView {
